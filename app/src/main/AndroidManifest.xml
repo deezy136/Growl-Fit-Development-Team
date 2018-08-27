@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="otf.project.otf">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <application
+        android:name=".OTFApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
+            android:value="OTF" />
+
+        <activity
+            android:name=".activities.LauncherActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VerificationCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ServerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NewGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChooseRoleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChooseGroupActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.ConnectionService"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".service.ClientConnectionService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.WelcomeGetStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.DebugActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b035812290eca8d5c088aae9246f1e2a48b56312" />
+
+        <receiver android:name=".receiver.HeadsetButtonReceiver" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

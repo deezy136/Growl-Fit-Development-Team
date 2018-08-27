@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:gravity="center"
+        style="?android:attr/textAppearanceSmall"
+        android:text="@string/verification_code_title"
+        android:layout_margin="16dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="1.0"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="15dip"
+            android:textColor="@android:color/black"
+            android:hint="Code"
+            android:id="@+id/phone_number_field"
+            android:layout_width="0dip"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="text|phone"/>
+    </LinearLayout>
+
+    <Button
+        android:textSize="14dip"
+        android:background="?attr/selectableItemBackground"
+        android:text="Proceed"
+        android:onClick="verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:textSize="14dip"
+        android:background="?attr/selectableItemBackground"
+        android:text="Change phone number"
+        android:onClick="verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:gravity="center"
+        style="?android:attr/textAppearanceSmall"
+        android:text="@string/verification_code_title"
+        android:layout_margin="16dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="1.0"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="15dip"
+            android:textColor="@android:color/black"
+            android:hint="Code"
+            android:id="@+id/code_field"
+            android:layout_width="0dip"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="text|phone"/>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:layout_marginTop="48dip"
+        android:id="@+id/verification_button"
+        android:background="@drawable/bg_circle_button_selector"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:onClick="proceed"
+        android:src="@drawable/ic_arrow_right"/>
+
+</LinearLayout>

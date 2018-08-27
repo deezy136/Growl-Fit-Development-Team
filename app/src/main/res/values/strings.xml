@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">Growl Fit</string>
+
+    <string name="group_1">Group #1</string>
+    <string name="group_2">Group #2</string>
+
+    <string name="i_want">I want</string>
+    <string name="create_new_group">Create new group</string>
+    <string name="join_group">Join group</string>
+
+    <string name="verification_phone_title">Please, enter your name and press button:</string>
+    <string name="verification_code_title">Pleace, enter verification code from sms in field below:</string>
+
+    <string name="new_group_title">Please, type group name in field below:</string>
+
+    <string name="your_group_title">Your group:</string>
+    <string name="available_group_title">Available groups:</string>
+    <string name="invite_clients_title">Tap user to invite:</string>
+
+    <string name="invite_to_group_title">Invite to Group</string>
+    <string name="invite_to_group_message">Please, choose Group to invite %1$s (%2$s)</string>
+    <string name="invitation_to_group_message">You received invitation to %1$s to Group#%2$s</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="title_activity_group">GroupActivity</string>
+
+    <string name="your_group_screen_title">Your group</string>
+
+    <string name="invite_activity_title">Invite to group</string>
+
+    <string name="audio_session_active">Audio-session active</string>
+    <string name="audio_session_active_group">Audio-session active for group #%s</string>
+    <string name="audio_session_inactive">Audio-session inactive</string>
+
+    <string name="no_group">No group</string>
+    <string name="please_wait_for_group_invitation">Please, wait for group invitation</string>
+    <string name="please_wait">Please, wait...</string>
+
+    <string name="restart_service">Restart service</string>
+
+    <string name="coach_mode_warning">Coach mode requires Android version 5.0 or higher</string>
+
+    <string name="hint_1">Press to search for clients to invite</string>
+    <string name="wifi_connection_required">Your device should be\nconnection to WiFi network</string>
+    <string name="no_users">No users in group.\nYou can add new users\nby tapping button below.</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

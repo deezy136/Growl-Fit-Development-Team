@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="otf.project.otf.MainActivity">
+
+    <LinearLayout
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:theme="@style/ToolbarStyle"
+            app:title="Dash Board" />
+
+        <TextView
+            android:layout_marginTop="48dip"
+            style="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/i_want"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:background="?attr/selectableItemBackground"
+            android:layout_margin="16dip"
+            android:onClick="createNewGroup"
+            android:text="@string/create_new_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="joinExistingGroup"
+            android:text="@string/join_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
