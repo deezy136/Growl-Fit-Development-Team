@@ -80,7 +80,7 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="b035812290eca8d5c088aae9246f1e2a48b56312" />
+            android:value="63e616f6e170c4b93a8d0900f8f33d380b0925a5" />
 
         <receiver android:name=".receiver.HeadsetButtonReceiver" />
 

@@ -31,7 +31,7 @@ public class WelcomeGetStartActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 // This intent actuall takes you to the choose role screen
-                Intent intent = new Intent(WelcomeGetStartActivity.this, ChooseRoleActivity.class);
+                Intent intent = new Intent(WelcomeGetStartActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

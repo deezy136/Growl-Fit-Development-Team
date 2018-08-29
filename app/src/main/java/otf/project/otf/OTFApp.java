@@ -4,6 +4,7 @@ import android.support.multidex.MultiDexApplication;
 
 import com.crashlytics.android.Crashlytics;
 
+import com.crashlytics.android.ndk.CrashlyticsNdk;
 import io.fabric.sdk.android.Fabric;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -22,7 +23,7 @@ public class OTFApp extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
 
-        Fabric.with(this, new Crashlytics());
+        Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
 
         Realm.init(this);
         RealmConfiguration config = new RealmConfiguration.Builder().build();
